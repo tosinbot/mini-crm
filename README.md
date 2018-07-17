@@ -1,13 +1,23 @@
 # MINI CRM - Cregital App Test
 ## Quick Start
 
+### Backend:
+
 - Clone repo
 - Run `composer install`
 - Configure `.env` file for authenticating via database
 - Run `php artisan migrate --seed`
 - Run `php artisan passport:install` for api token
 
-## Live Test
+### React Native
+
+- Clone repo
+- Run `yarn install`
+- Put `IP address of backend server` in config.js file for root and storage url
+- Run `react-native run-android` for android app test
+- Run `react-native run-ios` for ios app test
+
+## Live Backend Test
 
 - Run a PHP built in server from root project:
 
