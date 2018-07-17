@@ -56,10 +56,9 @@ export default class EditCompany extends Component {
                 { cancelable: false }
             )
         }else{
-
             this.setState({ spinnerVisible: true });
             try {
-                let response = await fetch(Constants.urls.root+'api/company/edit', {
+                let response = await fetch(Constants.urls.root+'api/company/edit/'+this.props.navigation.getParam('id'), {
                     method: 'PUT',
                     headers: {
                         Accept: 'application/json',
@@ -75,7 +74,6 @@ export default class EditCompany extends Component {
                 let responseJson = await response.json();
                 console.log("response:", responseJson);
                 if(responseJson.status === "success"){
-                    await AsyncStorage.setItem('api/user', JSON.stringify({token: responseJson.data.token}));
                     this.setState({ spinnerVisible: false });
                     Alert.alert(
                         "Success",
@@ -116,7 +114,7 @@ export default class EditCompany extends Component {
     _onDelete = async() => {
             this.setState({ spinnerVisible: true });
             try {
-                let response = await fetch('http://192.168.8.101:8000/api/company/delete', {
+                let response = await fetch(Constants.urls.root+'/api/company/delete/'+this.props.navigation.getParam('id'), {
                     method: 'DELETE',
                     headers: {
                         Accept: 'application/json',
@@ -127,7 +125,6 @@ export default class EditCompany extends Component {
                 let responseJson = await response.json();
                 console.log("response:", responseJson);
                 if(responseJson.status === "success"){
-                    await AsyncStorage.setItem('api/user', JSON.stringify({token: responseJson.data.token}));
                     this.setState({ spinnerVisible: false });
                     this.props.navigation.navigate('ManageCompanies');
                     Alert.alert(

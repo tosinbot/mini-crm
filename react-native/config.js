@@ -6,7 +6,7 @@
 
 export default {
     // App Details
-    appName: 'crmApp',
+    appName: 'MiniCRM',
 
     // Build Configuration - eg. Debug or Release?
     DEV: __DEV__,

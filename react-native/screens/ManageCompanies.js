@@ -103,6 +103,7 @@ export default class ManageCompanies extends React.Component {
                                 <Right>
                                     <Button transparent
                                             onPress={() => this.props.navigation.navigate("EditCompany", {
+                                                'id': data.id,
                                                 'name': data.name,
                                                 'email': data.email,
                                                 'website': data.website,
@@ -116,6 +117,7 @@ export default class ManageCompanies extends React.Component {
                                 full
                                 info
                                 onPress={() => this.props.navigation.navigate('ViewCompany', {
+                                    'id': data.id,
                                     'name': data.name,
                                     'email': data.email,
                                     'website': data.website,
