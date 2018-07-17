@@ -10,11 +10,15 @@ import EditEmployee from "./screens/EditEmployee";
 import ViewCompany from "./screens/ViewCompany";
 import ViewEmployee from "./screens/ViewEmployee";
 import SideBar from "./screens/SideBar";
-import { DrawerNavigator, StackNavigator } from "react-navigation";
+import { DrawerNavigator, StackNavigator  } from "react-navigation";
 
 const drawer1 = StackNavigator(
     {
-        Login: { screen: Login },
+        Login: { screen: Login,
+            navigationOptions: ({navigation}) => ({
+                drawerLockMode: 'locked-closed'
+            })
+        },
         Main: { screen: Main },
         AddCompany: { screen: AddCompany },
         AddEmployee: { screen: AddEmployee },
