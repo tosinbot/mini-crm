@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Text, Form, Item, Input, Label, Button, Right, Left, Icon, Body, Title } from 'native-base';
-
+import Constants from "../config";
 export default class AddEmployee extends Component {
 
     render() {

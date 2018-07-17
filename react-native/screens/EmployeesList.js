@@ -2,6 +2,8 @@ import React from "react";
 import { ListView, Alert, AsyncStorage } from "react-native";
 import { Container, Body, Content, Left, Right, List, ListItem, Thumbnail, Button, Text, Icon, Title } from "native-base";
 import Spinner from 'react-native-loading-spinner-overlay';
+import Constants from "../config";
+
 const datas = [];
 
 export default class EmployeesList extends React.Component {
@@ -42,7 +44,7 @@ export default class EmployeesList extends React.Component {
 
         try {
 
-            let response = await fetch('http://192.168.8.101:8000/api/employee/view', {
+            let response = await fetch(Constants.urls.root+'api/employee/view', {
                 method: 'GET',
                 headers: {
                     Accept: 'application/json',

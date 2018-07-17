@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
 import App from './App.js';
 
-export default class crmApp extends Component {
+export default class MiniCRM extends Component {
     render() {
         return (
             <App />
         );
     }
 }
-AppRegistry.registerComponent('crmApp', () => crmApp);
+AppRegistry.registerComponent('MiniCRM', () => MiniCRM);

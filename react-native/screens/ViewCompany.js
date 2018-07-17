@@ -30,7 +30,7 @@ export default class CardShowcaseExample extends Component {
                     <Card style={{flex: 0}}>
                         <CardItem>
                             <Left>
-                                <Thumbnail source={{uri: 'http://192.168.8.101:8000/storage/'+this.props.navigation.getParam('logo', null)}} />
+                                <Thumbnail source={{uri: 'https://cregital-crmapi.botmotion.net/storage/'+this.props.navigation.getParam('logo', null)}} />
                                 <Body>
                                 <Text>{this.props.navigation.getParam('name', 'Company Name')}</Text>
                                 <Text note>{this.props.navigation.getParam('website', 'Company Website')}</Text>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Text, Form, Item, Input, Label, Button, Right, Left, Icon, Body, Title } from 'native-base';
-import FilePickerManager from 'react-native-file-picker';
 import {Alert, AsyncStorage, ListView} from "react-native";
+import Constants from "../config";
 
 export default class EditCompany extends Component {
 
@@ -59,7 +59,7 @@ export default class EditCompany extends Component {
 
             this.setState({ spinnerVisible: true });
             try {
-                let response = await fetch('http://192.168.8.101:8000/api/company/edit', {
+                let response = await fetch(Constants.urls.root+'api/company/edit', {
                     method: 'PUT',
                     headers: {
                         Accept: 'application/json',
@@ -164,7 +164,6 @@ export default class EditCompany extends Component {
 
         }
 
-    }
 
     render() {
 
@@ -243,21 +242,21 @@ export default class EditCompany extends Component {
     }
 
 
-    uploadLogo() {
-        FilePickerManager.showFilePicker(null, (response) => {
-            console.log('Response = ', response);
-
-            if (response.didCancel) {
-                console.log('User cancelled file picker');
-            }
-            else if (response.error) {
-                console.log('FilePickerManager Error: ', response.error);
-            }
-            else {
-                this.setState({
-                    file: response
-                });
-            }
-        });
-    }
+    // uploadLogo() {
+    //     FilePickerManager.showFilePicker(null, (response) => {
+    //         console.log('Response = ', response);
+    //
+    //         if (response.didCancel) {
+    //             console.log('User cancelled file picker');
+    //         }
+    //         else if (response.error) {
+    //             console.log('FilePickerManager Error: ', response.error);
+    //         }
+    //         else {
+    //             this.setState({
+    //                 file: response
+    //             });
+    //         }
+    //     });
+    // }
 }

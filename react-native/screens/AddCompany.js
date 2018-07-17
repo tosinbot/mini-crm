@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Text, Form, Item, Input, Label, Button, Right, Left, Icon, Body, Title } from 'native-base';
-import FilePickerManager from 'react-native-file-picker';
-
+import Constants from "../config";
 export default class AddCompany extends Component {
 
     render() {
@@ -32,7 +31,7 @@ export default class AddCompany extends Component {
                         <Item floatingLabel style={{ margin: 15 }}>
                             <Label>Logo</Label>
                             <Right>
-                                <Button onPress={this.uploadLogo.bind(this)} title="Upload Image"
+                                <Button title="Upload Image"
                                         color="#841584"
                                         accessibilityLabel="Choose Company Logo" />
                             </Right>
@@ -52,21 +51,21 @@ export default class AddCompany extends Component {
     }
 
 
-    uploadLogo() {
-        FilePickerManager.showFilePicker(null, (response) => {
-            console.log('Response = ', response);
-
-            if (response.didCancel) {
-                console.log('User cancelled file picker');
-            }
-            else if (response.error) {
-                console.log('FilePickerManager Error: ', response.error);
-            }
-            else {
-                this.setState({
-                    file: response
-                });
-            }
-        });
-    }
+    // uploadLogo() {
+    //     FilePickerManager.showFilePicker(null, (response) => {
+    //         console.log('Response = ', response);
+    //
+    //         if (response.didCancel) {
+    //             console.log('User cancelled file picker');
+    //         }
+    //         else if (response.error) {
+    //             console.log('FilePickerManager Error: ', response.error);
+    //         }
+    //         else {
+    //             this.setState({
+    //                 file: response
+    //             });
+    //         }
+    //     });
+    // }
 }

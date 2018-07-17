@@ -11,7 +11,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* crmAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* crmAppTests.m */; };
+		00E356F31AD99517003FC87E /* MiniCRMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MiniCRMTests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -32,25 +32,25 @@
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* crmAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* crmAppTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* MiniCRMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MiniCRMTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		1F939780615A4176BABB4B29 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 960AF98EF95B455C8A796666 /* Entypo.ttf */; };
-		32CF25F08FBB4A90850DB536 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F3F5DF11CEF478FBAFFBD5F /* EvilIcons.ttf */; };
-		962DE6A18769464796487E38 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A46975D611742F5B9A71406 /* Feather.ttf */; };
-		FC333F8454F14E538BDB8E67 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3E7C66EEFEE45A0A8A36E79 /* FontAwesome.ttf */; };
-		FC56BDC9A15842F48BBE0839 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34C3D9190B744D86A14ABF77 /* Foundation.ttf */; };
-		1B762EE311094806ADE8B054 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A5386E506A246ED85F6A266 /* Ionicons.ttf */; };
-		A95675A5B38D4683B43BC55A /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 881878B4749B436DBC6D50F4 /* MaterialCommunityIcons.ttf */; };
-		C0D911E6E4674EB4B741939F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EE3CD6A6E5A4F78B99C2AD9 /* MaterialIcons.ttf */; };
-		2BAE8240B5FA4E77B7C96392 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D147DA7E08344C01A1C27336 /* Octicons.ttf */; };
-		2EA047EF3A464DBCAB2F8E5F /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0DDF8F5B2467F8332F08F /* Roboto_medium.ttf */; };
-		88BE6009D64841939D72B266 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54C6D9786A4D417C84164221 /* Roboto.ttf */; };
-		8D653E024A5F400CA8810AFD /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2117DB917BC54CB8888987B9 /* rubicon-icon-font.ttf */; };
-		2B29410652FD4BEAB0BD938B /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1280DCF4C70B42C39EA81E58 /* SimpleLineIcons.ttf */; };
-		ADF9DF93A7E04563A9061FA8 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D87D68E758DF4309A7191315 /* Zocial.ttf */; };
+		07A9237AF16F4DA982A373E3 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C9538FFEF714F9F9EDEBFA3 /* Entypo.ttf */; };
+		61700A7851FF459BB9A0AFAE /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB383C0BA2E849C0B3DF8F9E /* EvilIcons.ttf */; };
+		07BE19CEFBA846C782CB69DB /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60545D2A7434946BC607E86 /* Feather.ttf */; };
+		D0A7CE73F0864F80B35767EF /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD4ACDB6909458988550C6F /* FontAwesome.ttf */; };
+		9F58941EB960427F8CDAA1F0 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6166715EC6264A288515AD37 /* Foundation.ttf */; };
+		29722AB9588C4FDCBB2CBE14 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 816C1F50D5CE442FA0977D48 /* Ionicons.ttf */; };
+		E3E967E7163442BB8972FD5C /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 620227EA3E9942C581ECAEF6 /* MaterialCommunityIcons.ttf */; };
+		3CE56BF971954A8387CCCAB9 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20303404337A4BB68E078979 /* MaterialIcons.ttf */; };
+		8BFDAD940E634434A68ACCC6 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 708A614B04B84ED69196B075 /* Octicons.ttf */; };
+		F7BA6AE54CDF4CD99F5C745E /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BACDDD194F60436583BDA624 /* Roboto_medium.ttf */; };
+		DB78DDA04F4B4F9584082AAD /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 765D79D7F7754299BC91775C /* Roboto.ttf */; };
+		DDC35E30B6DE4CF6B584A2B7 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B32B3C48EF54119B7B765D6 /* rubicon-icon-font.ttf */; };
+		D3B6DA69C118461AB394A7D2 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06C5D9804165452F917FC5BF /* SimpleLineIcons.ttf */; };
+		841E30B6550F4161A6DF307B /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A7B8C697CB3547188837EC27 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +94,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = crmApp;
+			remoteInfo = MiniCRM;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -122,7 +122,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "crmApp-tvOS";
+			remoteInfo = "MiniCRM-tvOS";
 		};
 		2D16E6711FA4F8DC00B85C8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -336,40 +336,40 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* crmAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crmAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* MiniCRMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCRMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* crmAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = crmAppTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* MiniCRMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniCRMTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* crmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = crmApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = crmApp/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* MiniCRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniCRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MiniCRM/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MiniCRM/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = crmApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = crmApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = crmApp/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MiniCRM/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MiniCRM/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MiniCRM/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* crmApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "crmApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* crmApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "crmApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* MiniCRM-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniCRM-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* MiniCRM-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MiniCRM-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		960AF98EF95B455C8A796666 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4F3F5DF11CEF478FBAFFBD5F /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9A46975D611742F5B9A71406 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C3E7C66EEFEE45A0A8A36E79 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		34C3D9190B744D86A14ABF77 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4A5386E506A246ED85F6A266 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		881878B4749B436DBC6D50F4 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7EE3CD6A6E5A4F78B99C2AD9 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D147DA7E08344C01A1C27336 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7FB0DDF8F5B2467F8332F08F /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		54C6D9786A4D417C84164221 /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2117DB917BC54CB8888987B9 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1280DCF4C70B42C39EA81E58 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D87D68E758DF4309A7191315 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C9538FFEF714F9F9EDEBFA3 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EB383C0BA2E849C0B3DF8F9E /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A60545D2A7434946BC607E86 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AAD4ACDB6909458988550C6F /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6166715EC6264A288515AD37 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		816C1F50D5CE442FA0977D48 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		620227EA3E9942C581ECAEF6 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20303404337A4BB68E078979 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		708A614B04B84ED69196B075 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BACDDD194F60436583BDA624 /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		765D79D7F7754299BC91775C /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2B32B3C48EF54119B7B765D6 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		06C5D9804165452F917FC5BF /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A7B8C697CB3547188837EC27 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,13 +469,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* crmAppTests */ = {
+		00E356EF1AD99517003FC87E /* MiniCRMTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* crmAppTests.m */,
+				00E356F21AD99517003FC87E /* MiniCRMTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = crmAppTests;
+			path = MiniCRMTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -506,7 +506,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* crmApp */ = {
+		13B07FAE1A68108700A75B9A /* MiniCRM */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -517,7 +517,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = crmApp;
+			name = MiniCRM;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -600,12 +600,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* crmApp */,
+				13B07FAE1A68108700A75B9A /* MiniCRM */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* crmAppTests */,
+				00E356EF1AD99517003FC87E /* MiniCRMTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				C8F3762BA27F43C4A342F960 /* Resources */,
+				ECC3033D715646FC9E07ACD0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -615,10 +615,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* crmApp.app */,
-				00E356EE1AD99517003FC87E /* crmAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* crmApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* crmApp-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* MiniCRM.app */,
+				00E356EE1AD99517003FC87E /* MiniCRMTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* MiniCRM-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* MiniCRM-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -632,23 +632,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C8F3762BA27F43C4A342F960 /* Resources */ = {
+		ECC3033D715646FC9E07ACD0 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				960AF98EF95B455C8A796666 /* Entypo.ttf */,
-				4F3F5DF11CEF478FBAFFBD5F /* EvilIcons.ttf */,
-				9A46975D611742F5B9A71406 /* Feather.ttf */,
-				C3E7C66EEFEE45A0A8A36E79 /* FontAwesome.ttf */,
-				34C3D9190B744D86A14ABF77 /* Foundation.ttf */,
-				4A5386E506A246ED85F6A266 /* Ionicons.ttf */,
-				881878B4749B436DBC6D50F4 /* MaterialCommunityIcons.ttf */,
-				7EE3CD6A6E5A4F78B99C2AD9 /* MaterialIcons.ttf */,
-				D147DA7E08344C01A1C27336 /* Octicons.ttf */,
-				7FB0DDF8F5B2467F8332F08F /* Roboto_medium.ttf */,
-				54C6D9786A4D417C84164221 /* Roboto.ttf */,
-				2117DB917BC54CB8888987B9 /* rubicon-icon-font.ttf */,
-				1280DCF4C70B42C39EA81E58 /* SimpleLineIcons.ttf */,
-				D87D68E758DF4309A7191315 /* Zocial.ttf */,
+				5C9538FFEF714F9F9EDEBFA3 /* Entypo.ttf */,
+				EB383C0BA2E849C0B3DF8F9E /* EvilIcons.ttf */,
+				A60545D2A7434946BC607E86 /* Feather.ttf */,
+				AAD4ACDB6909458988550C6F /* FontAwesome.ttf */,
+				6166715EC6264A288515AD37 /* Foundation.ttf */,
+				816C1F50D5CE442FA0977D48 /* Ionicons.ttf */,
+				620227EA3E9942C581ECAEF6 /* MaterialCommunityIcons.ttf */,
+				20303404337A4BB68E078979 /* MaterialIcons.ttf */,
+				708A614B04B84ED69196B075 /* Octicons.ttf */,
+				BACDDD194F60436583BDA624 /* Roboto_medium.ttf */,
+				765D79D7F7754299BC91775C /* Roboto.ttf */,
+				2B32B3C48EF54119B7B765D6 /* rubicon-icon-font.ttf */,
+				06C5D9804165452F917FC5BF /* SimpleLineIcons.ttf */,
+				A7B8C697CB3547188837EC27 /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -657,9 +657,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* crmAppTests */ = {
+		00E356ED1AD99517003FC87E /* MiniCRMTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "crmAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MiniCRMTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -670,14 +670,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = crmAppTests;
-			productName = crmAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* crmAppTests.xctest */;
+			name = MiniCRMTests;
+			productName = MiniCRMTests;
+			productReference = 00E356EE1AD99517003FC87E /* MiniCRMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* crmApp */ = {
+		13B07F861A680F5B00A75B9A /* MiniCRM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "crmApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MiniCRM" */;
 			buildPhases = (
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -688,14 +688,14 @@
 			);
 			dependencies = (
 			);
-			name = crmApp;
+			name = MiniCRM;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* crmApp.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* MiniCRM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* crmApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* MiniCRM-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "crmApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MiniCRM-tvOS" */;
 			buildPhases = (
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -706,14 +706,14 @@
 			);
 			dependencies = (
 			);
-			name = "crmApp-tvOS";
-			productName = "crmApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* crmApp-tvOS.app */;
+			name = "MiniCRM-tvOS";
+			productName = "MiniCRM-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* MiniCRM-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* crmApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* MiniCRM-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "crmApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MiniCRM-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -724,9 +724,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "crmApp-tvOSTests";
-			productName = "crmApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* crmApp-tvOSTests.xctest */;
+			name = "MiniCRM-tvOSTests";
+			productName = "MiniCRM-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* MiniCRM-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -753,7 +753,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "crmApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MiniCRM" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -816,10 +816,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* crmApp */,
-				00E356ED1AD99517003FC87E /* crmAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* crmApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* crmApp-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* MiniCRM */,
+				00E356ED1AD99517003FC87E /* MiniCRMTests */,
+				2D02E47A1E0B4A5D006451C7 /* MiniCRM-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* MiniCRM-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1100,20 +1100,20 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				1F939780615A4176BABB4B29 /* Entypo.ttf in Resources */,
-				32CF25F08FBB4A90850DB536 /* EvilIcons.ttf in Resources */,
-				962DE6A18769464796487E38 /* Feather.ttf in Resources */,
-				FC333F8454F14E538BDB8E67 /* FontAwesome.ttf in Resources */,
-				FC56BDC9A15842F48BBE0839 /* Foundation.ttf in Resources */,
-				1B762EE311094806ADE8B054 /* Ionicons.ttf in Resources */,
-				A95675A5B38D4683B43BC55A /* MaterialCommunityIcons.ttf in Resources */,
-				C0D911E6E4674EB4B741939F /* MaterialIcons.ttf in Resources */,
-				2BAE8240B5FA4E77B7C96392 /* Octicons.ttf in Resources */,
-				2EA047EF3A464DBCAB2F8E5F /* Roboto_medium.ttf in Resources */,
-				88BE6009D64841939D72B266 /* Roboto.ttf in Resources */,
-				8D653E024A5F400CA8810AFD /* rubicon-icon-font.ttf in Resources */,
-				2B29410652FD4BEAB0BD938B /* SimpleLineIcons.ttf in Resources */,
-				ADF9DF93A7E04563A9061FA8 /* Zocial.ttf in Resources */,
+				07A9237AF16F4DA982A373E3 /* Entypo.ttf in Resources */,
+				61700A7851FF459BB9A0AFAE /* EvilIcons.ttf in Resources */,
+				07BE19CEFBA846C782CB69DB /* Feather.ttf in Resources */,
+				D0A7CE73F0864F80B35767EF /* FontAwesome.ttf in Resources */,
+				9F58941EB960427F8CDAA1F0 /* Foundation.ttf in Resources */,
+				29722AB9588C4FDCBB2CBE14 /* Ionicons.ttf in Resources */,
+				E3E967E7163442BB8972FD5C /* MaterialCommunityIcons.ttf in Resources */,
+				3CE56BF971954A8387CCCAB9 /* MaterialIcons.ttf in Resources */,
+				8BFDAD940E634434A68ACCC6 /* Octicons.ttf in Resources */,
+				F7BA6AE54CDF4CD99F5C745E /* Roboto_medium.ttf in Resources */,
+				DB78DDA04F4B4F9584082AAD /* Roboto.ttf in Resources */,
+				DDC35E30B6DE4CF6B584A2B7 /* rubicon-icon-font.ttf in Resources */,
+				D3B6DA69C118461AB394A7D2 /* SimpleLineIcons.ttf in Resources */,
+				841E30B6550F4161A6DF307B /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1170,7 +1170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* crmAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* MiniCRMTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1196,7 +1196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* crmAppTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* MiniCRMTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,12 +1205,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* crmApp */;
+			target = 13B07F861A680F5B00A75B9A /* MiniCRM */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* crmApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* MiniCRM-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1222,7 +1222,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = crmApp;
+			path = MiniCRM;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1236,7 +1236,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = crmAppTests/Info.plist;
+				INFOPLIST_FILE = MiniCRMTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1244,7 +1244,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crmApp.app/crmApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCRM.app/MiniCRM";
 			};
 			name = Debug;
 		};
@@ -1253,7 +1253,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = crmAppTests/Info.plist;
+				INFOPLIST_FILE = MiniCRMTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1261,7 +1261,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crmApp.app/crmApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCRM.app/MiniCRM";
 			};
 			name = Release;
 		};
@@ -1271,14 +1271,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = crmApp/Info.plist;
+				INFOPLIST_FILE = MiniCRM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = crmApp;
+				PRODUCT_NAME = MiniCRM;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1288,14 +1288,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = crmApp/Info.plist;
+				INFOPLIST_FILE = MiniCRM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = crmApp;
+				PRODUCT_NAME = MiniCRM;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1312,13 +1312,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "crmApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "MiniCRM-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.crmApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.MiniCRM-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1338,13 +1338,13 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "crmApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "MiniCRM-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.crmApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.MiniCRM-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1363,16 +1363,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "crmApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "MiniCRM-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.crmApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.MiniCRM-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crmApp-tvOS.app/crmApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCRM-tvOS.app/MiniCRM-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -1388,16 +1388,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "crmApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "MiniCRM-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.crmApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.MiniCRM-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crmApp-tvOS.app/crmApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniCRM-tvOS.app/MiniCRM-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1481,7 +1481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "crmAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MiniCRMTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1490,7 +1490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "crmApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MiniCRM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1499,7 +1499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "crmApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MiniCRM-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1508,7 +1508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "crmApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MiniCRM-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1517,7 +1517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "crmApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MiniCRM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

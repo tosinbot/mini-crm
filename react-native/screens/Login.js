@@ -15,6 +15,7 @@ import {
     Form,
     Text } from "native-base";
 import Spinner from 'react-native-loading-spinner-overlay';
+import Constants from '../config';
 
 const launchscreenBg = require("../assets/launchscreen-bg.png");
 const launchscreenLogo = require("../assets/logo-kitchen-sink.png");
@@ -69,7 +70,7 @@ export default class Login extends Component {
 
             this.setState({ spinnerVisible: true });
             try {
-                let response = await fetch('http://192.168.8.101:8000/api/login', {
+                let response = await fetch(Constants.urls.root+'api/login', {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',
@@ -157,7 +158,7 @@ export default class Login extends Component {
 
             this.setState({ spinnerVisible: true });
             try {
-                let response = await fetch('http://192.168.8.101:8000/api/register', {
+                let response = await fetch(Constants.urls.root+'api/register', {
                     method: 'POST',
                     headers: {
                         Accept: 'application/json',

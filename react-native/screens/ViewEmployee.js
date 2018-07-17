@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Right, Title, Body } from 'native-base';
+import Constants from '../config';
 export default class CardShowcaseExample extends Component {
     render() {
         return (

@@ -2,6 +2,7 @@ import React from "react";
 import { ListView, AsyncStorage, Alert } from "react-native";
 import { Container, Body, Content, Header, Left, Right, List, ListItem, Thumbnail, Button, Text, Icon, Title } from "native-base";
 import Spinner from 'react-native-loading-spinner-overlay';
+import Constants from "../config";
 const datas = [
 ];
 
@@ -43,7 +44,7 @@ export default class ManageCompanies extends React.Component {
 
         try {
 
-            let response = await fetch('http://192.168.8.101:8000/api/company/view', {
+            let response = await fetch(Constants.urls.root+'api/company/view', {
                 method: 'GET',
                 headers: {
                     Accept: 'application/json',
@@ -93,7 +94,7 @@ export default class ManageCompanies extends React.Component {
                         renderRow={data =>
                             <ListItem thumbnail style={{ paddingLeft: 20 }}>
                                 <Left>
-                                    <Thumbnail square source={{ uri: 'http://192.168.8.101:8000/storage/'+data.logo }} />
+                                    <Thumbnail square source={{ uri: Constants.urls.storageRoot+data.logo }} />
                                 </Left>
                                 <Body>
                                 <Text>{data.name}</Text>
