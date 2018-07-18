@@ -16,11 +16,12 @@ export default class ManageCompanies extends React.Component {
             spinnerVisible: true,
         };
     }
-    deleteRow(secId, rowId, rowMap) {
+    deleteRow(secId, rowId, rowMap, serveId) {
         rowMap[`${secId}${rowId}`].props.closeRow();
         const newData = [...this.state.listViewData];
         newData.splice(rowId, 1);
         this.setState({ listViewData: newData });
+        this._onDelete(serveId);
     }
 
     componentDidMount = async() => {
@@ -62,7 +63,7 @@ export default class ManageCompanies extends React.Component {
             this.setState({spinnerVisible: false});
             Alert.alert(
                 "Error",
-                "An error occurred, please try later",
+                "An error occurred, please ensure you are connected to the internet and try again",
                 [
                     {text: "Try Again", onPress: () => console.log('OK Pressed')}
                 ],
@@ -70,6 +71,50 @@ export default class ManageCompanies extends React.Component {
             )
             console.log("caught", e)
         }
+    }
+
+    _onDelete = async(id) => {
+        // this.setState({ spinnerVisible: true });
+        try {
+            let response = await fetch(Constants.urls.root+'/api/company/delete/'+id, {
+                method: 'DELETE',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer ' + this.state.userToken.token
+                },
+            });
+            let responseJson = await response.json();
+            console.log("response:", responseJson);
+            if(responseJson.status === "success"){
+                // this.setState({ spinnerVisible: false });
+                console.log("done", responseJson)
+            }else{
+                // this.setState({ spinnerVisible: false });
+                this.props.navigation.navigate('ManageCompanies');
+                Alert.alert(
+                    "Error",
+                    responseJson.message,
+                    [
+                        { text: "Try Again", onPress: () => console.log('OK Pressed') }
+                    ],
+                    { cancelable: false }
+                )
+            }
+        } catch (error) {
+            // this.setState({ spinnerVisible: false });
+            this.props.navigation.navigate('ManageEmployees');
+            Alert.alert(
+                "Error",
+                "An error occurred, please ensure you are connected to the internet and try again",
+                [
+                    { text: "Try Again", onPress: () => console.log('OK Pressed') }
+                ],
+                { cancelable: false }
+            )
+            console.log("caught", error)
+        }
+
     }
     render() {
         return (
@@ -83,18 +128,29 @@ export default class ManageCompanies extends React.Component {
                     <Body style={{ flex: 3 }}>
                     <Title>Companies</Title>
                     </Body>
-                    <Right />
+                    <Right>
+                        <Button transparent onPress={() => this.props.navigation.navigate("AddCompany")}>
+                            <Icon name="add" />
+                        </Button>
+                    </Right>
                 </Header>
                 <Spinner visible={this.state.spinnerVisible}
                          textStyle={{ color: '#8bb4c2', fontSize: 16, marginTop: -30 }}
                          color={'#8bb4c2'}/>
                 <Content padder>
+                    { this.state.listViewData.length < 1 ?
+                        <Text style={{textAlign: "center", marginTop: 50 }}>
+                            No company added yet
+                        </Text>
+                        :
                     <List
                         dataSource={this.ds.cloneWithRows(this.state.listViewData)}
                         renderRow={data =>
                             <ListItem thumbnail style={{ paddingLeft: 20 }}>
                                 <Left>
-                                    <Thumbnail square source={{ uri: Constants.urls.storageRoot+data.logo }} />
+                                    {data.logo !== null ? <Thumbnail square source={{ uri: Constants.urls.storageRoot+data.logo }} />
+                                        : <Thumbnail square source={require('../assets/avatar_company.png')} />
+                                    }
                                 </Left>
                                 <Body>
                                 <Text>{data.name}</Text>
@@ -135,7 +191,7 @@ export default class ManageCompanies extends React.Component {
                             <Button
                                 full
                                 danger
-                                onPress={_ => this.deleteRow(secId, rowId, rowMap)}
+                                onPress={_ => this.deleteRow(secId, rowId, rowMap, data.id)}
                                 style={{
                                     flex: 1,
                                     alignItems: "center",
@@ -146,7 +202,7 @@ export default class ManageCompanies extends React.Component {
                             </Button>}
                         leftOpenValue={75}
                         rightOpenValue={-75}
-                    />
+                    /> }
                 </Content>
             </Container>
         );

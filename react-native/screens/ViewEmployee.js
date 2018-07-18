@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Right, Title, Body } from 'native-base';
 import Constants from '../config';
-export default class CardShowcaseExample extends Component {
+export default class ViewEmployee extends Component {
     render() {
         return (
             <Container>
@@ -42,11 +42,13 @@ export default class CardShowcaseExample extends Component {
                             <Left>
                                 <Button transparent textStyle={{color: '#87838B'}}
                                         onPress={() => this.props.navigation.navigate("EditEmployee", {
-                                            'firstname': data.firstname,
-                                            'lastname': data.lastname,
-                                            'company': data.company.name,
-                                            'email': data.email,
-                                            'phone': data.phone})}>
+                                            'id': this.props.navigation.getParam('id', null),
+                                            'firstname': this.props.navigation.getParam('firstname', null),
+                                            'lastname': this.props.navigation.getParam('lastname', null),
+                                            'company': this.props.navigation.getParam('company', null),
+                                            'companyId': this.props.navigation.getParam('companyId', null),
+                                            'email': this.props.navigation.getParam('email', null),
+                                            'phone': this.props.navigation.getParam('phone', null)})}>
                                     <Icon name="md-create" />
                                     <Text>Edit Employee</Text>
                                 </Button>

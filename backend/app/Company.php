@@ -28,7 +28,7 @@ class Company extends Model
         return [
             'name' => 'required',
             'email' => 'email|unique:companies',
-            'logo' => 'dimensions:min_width=100,min_height=100'
+            'logo' => 'nullable|dimensions:min_width=100,min_height=100'
         ];
     }
 
@@ -36,7 +36,7 @@ class Company extends Model
         return [
             'name' => 'required',
             'email' => 'email',
-            'logo' => 'dimensions:min_width=100,min_height=100'
+            'logo' => 'nullable|dimensions:min_width=100,min_height=100'
         ];
     }
 }

@@ -74,14 +74,20 @@ class CompaniesController extends Controller
         }
 
         $company = new Company;
-        $company = $request->all();
-
-        $response = Company::create([
-            'name' => $company['name'],
-            'email' => $company['email'],
-            'logo' => $request->file('logo')->store('public/logos'),
-            'website' => $company['website']
-        ]);
+        if(!$request->hasFile('logo')){
+            $response = Company::create([
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'website' => $request->input('website')
+            ]);
+        }else{
+            $response = Company::create([
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'logo' => $request->file('logo')->store('public/logos'),
+                'website' => $request->input('website')
+            ]);
+        }
 
         if($response)
             return response()->json(['status'=>'success', 'message'=>'company_created','data'=>$response],Response::HTTP_OK);

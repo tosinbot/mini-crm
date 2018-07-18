@@ -62,7 +62,7 @@ export default class EmployeesList extends React.Component {
             this.setState({spinnerVisible: false});
             Alert.alert(
                 "Error",
-                "An error occurred, please try later",
+                "An error occurred, please ensure you are connected to the internet and try again",
                 [
                     {text: "Try Again", onPress: () => console.log('OK Pressed')}
                 ],
@@ -79,55 +79,64 @@ export default class EmployeesList extends React.Component {
                          textStyle={{ color: '#8bb4c2', fontSize: 16, marginTop: -30 }}
                          color={'#8bb4c2'}/>
                 <Content padder>
+                    { this.state.listViewData.length < 1 ?
+                        <Text style={{textAlign: "center", marginTop: 50 }}>
+                            No employee added yet
+                        </Text>
+                    : <List
 
-                    <List
+                            dataSource={this.ds.cloneWithRows(this.state.listViewData)}
+                            renderRow={data =>
+                                <ListItem thumbnail style={{ paddingLeft: 20 }}>
+                                    <Left>
+                                        <Thumbnail square source={require('../assets/avatar.png')} />
+                                    </Left>
+                                    <Body>
+                                    <Text>{data.name}</Text>
+                                    {data.company === null ? <Text note numberOfLines={3}>
+                                        {data.email+'\n'+data.phone}
+                                        </Text> : <Text note numberOfLines={3}>
+                                        {data.email+'\n'+data.phone+'\n'+ data.company.name }
+                                        </Text> }
 
-                        dataSource={this.ds.cloneWithRows(this.state.listViewData)}
-                        renderRow={data =>
-                            <ListItem thumbnail style={{ paddingLeft: 20 }}>
-                                <Left>
-                                    <Thumbnail square source={require('../assets/avatar.png')} />
-                                </Left>
-                                <Body>
-                                <Text>{data.name}</Text>
-                                <Text note numberOfLines={3}>{data.email+'\n'+data.phone+'\n'+data.company.name}</Text>
-                                </Body>
-                                {/*<Right>*/}
-                                {/*<Button transparent*/}
-                                {/*onPress={() => this.props.navigation.navigate("EditCompany")}>*/}
-                                {/*<Text>Edit</Text>*/}
-                                {/*</Button>*/}
-                                {/*</Right>*/}
-                            </ListItem>}
-                        renderLeftHiddenRow={data =>
-                            <Button
-                                full
-                                info
-                                style={{
-                                    flex: 1,
-                                    alignItems: "center",
-                                    justifyContent: "center"
-                                }}
-                            >
+                                    </Body>
+                                    {/*<Right>*/}
+                                    {/*<Button transparent*/}
+                                    {/*onPress={() => this.props.navigation.navigate("EditCompany")}>*/}
+                                    {/*<Text>Edit</Text>*/}
+                                    {/*</Button>*/}
+                                    {/*</Right>*/}
+                                </ListItem>}
+                            renderLeftHiddenRow={data =>
+                                <Button
+                                    full
+                                    info
+                                    style={{
+                                        flex: 1,
+                                        alignItems: "center",
+                                        justifyContent: "center"
+                                    }}
+                                >
 
-                                <Icon active name="information-circle" />
-                            </Button>}
-                        renderRightHiddenRow={(data, secId, rowId, rowMap) =>
-                            <Button
-                                full
-                                danger
-                                onPress={_ => this.deleteRow(secId, rowId, rowMap)}
-                                style={{
-                                    flex: 1,
-                                    alignItems: "center",
-                                    justifyContent: "center"
-                                }}
-                            >
-                                <Icon active name="trash" />
-                            </Button>}
-                        leftOpenValue={75}
-                        rightOpenValue={-75}
-                    />
+                                    <Icon active name="information-circle" />
+                                </Button>}
+                            renderRightHiddenRow={(data, secId, rowId, rowMap) =>
+                                <Button
+                                    full
+                                    danger
+                                    onPress={_ => this.deleteRow(secId, rowId, rowMap)}
+                                    style={{
+                                        flex: 1,
+                                        alignItems: "center",
+                                        justifyContent: "center"
+                                    }}
+                                >
+                                    <Icon active name="trash" />
+                                </Button>}
+                            leftOpenValue={75}
+                            rightOpenValue={-75}
+                        />}
+
                 </Content>
             </Container>
         );

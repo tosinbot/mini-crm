@@ -22,7 +22,7 @@ const routes =  [
     },
     {
         name: "Add Employee",
-        route: "AddCompany",
+        route: "AddEmployee",
         icon: "person-add"
     },
     {

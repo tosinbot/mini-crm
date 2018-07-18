@@ -61,7 +61,7 @@ export default class CompaniesList extends React.Component {
             this.setState({spinnerVisible: false});
             Alert.alert(
                 "Error",
-                "An error occurred, please try later",
+                "An error occurred, please ensure you are connected to the internet and try again",
                 [
                     {text: "Try Again", onPress: () => console.log('OK Pressed')}
                 ],
@@ -78,14 +78,21 @@ export default class CompaniesList extends React.Component {
                          textStyle={{ color: '#8bb4c2', fontSize: 16, marginTop: -30 }}
                          color={'#8bb4c2'}/>
                 <Content padder>
-
+                    { this.state.listViewData.length < 1 ?
+                        <Text style={{textAlign: "center", marginTop: 50 }}>
+                            No company added yet
+                        </Text>
+                        :
                     <List
 
                         dataSource={this.ds.cloneWithRows(this.state.listViewData)}
                         renderRow={data =>
                             <ListItem thumbnail style={{ paddingLeft: 20 }}>
                                 <Left>
-                                    <Thumbnail square source={{ uri: Constants.urls.storageRoot+data.logo }} />
+                                    {data.logo !== null ? <Thumbnail square source={{ uri: Constants.urls.storageRoot+data.logo }} />
+                                        : <Thumbnail square source={require('../assets/avatar_company.png')} />
+                                    }
+
                                 </Left>
                                 <Body>
                                 <Text>{data.name}</Text>
@@ -126,7 +133,7 @@ export default class CompaniesList extends React.Component {
                             </Button>}
                         leftOpenValue={75}
                         rightOpenValue={-75}
-                    />
+                    /> }
                 </Content>
             </Container>
         );

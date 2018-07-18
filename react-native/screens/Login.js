@@ -102,7 +102,7 @@ export default class Login extends Component {
                 this.setState({ spinnerVisible: false });
                 Alert.alert(
                     "Error",
-                    "An error occurred, please try later",
+                    "An error occurred, please ensure you are connected to the internet and try again",
                     [
                         { text: "Try Again", onPress: () => console.log('OK Pressed') }
                     ],
@@ -229,14 +229,15 @@ export default class Login extends Component {
                                 <Input style={{color: "#ffffff" }}
                                        placeholderTextColor="#ffffff"
                                        placeholder="Email Address"
+                                       keyboard-type={'email-address'}
                                        autoCapitalize='none'
                                        onChangeText={(text) => this.setState({ email: text })}
                                        onSubmitEditing={(event) => {
-                                           this.refs.password.focus();
+                                           this.refs.password._root.focus();
                                        }}/>
                             </Item>
                             <Item>
-                                <Input ref='password'
+                                <Input ref={'password'}
                                        style={{color: "#ffffff" }}
                                        placeholderTextColor="#ffffff"
                                        autoCapitalize='none'
@@ -255,7 +256,7 @@ export default class Login extends Component {
                                     placeholder="Full Name"
                                     onChangeText={(text) => this.setState({ name: text })}
                                     onSubmitEditing={(event) => {
-                                        this.refs.email.focus();
+                                        this.refs.email._root.focus();
                                     }}
                                     />
                             </Item>
@@ -264,9 +265,10 @@ export default class Login extends Component {
                                         style={{color: "#ffffff" }}
                                        placeholderTextColor="#ffffff"
                                        placeholder="Email Address"
+                                       keyboard-type={'email-address'}
                                        onChangeText={(text) => this.setState({ email: text })}
                                        onSubmitEditing={(event) => {
-                                           this.refs.passwordReg.focus();
+                                           this.refs.passwordReg._root.focus();
                                        }} />
                             </Item>
                             <Item>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Text, Form, Item, Input, Label, Button, Right, Left, Icon, Body, Title } from 'native-base';
 import {Alert, AsyncStorage, ListView} from "react-native";
 import Constants from "../config";
+import Spinner from "react-native-loading-spinner-overlay";
 
 export default class EditCompany extends Component {
 
@@ -33,6 +34,10 @@ export default class EditCompany extends Component {
                 {cancelable: false}
             )
         }
+    }
+
+    _focusInput(inputField) {
+        this[inputField]._root.focus();
     }
 
     _onSave = async() => {
@@ -75,6 +80,7 @@ export default class EditCompany extends Component {
                 console.log("response:", responseJson);
                 if(responseJson.status === "success"){
                     this.setState({ spinnerVisible: false });
+                    this.props.navigation.navigate('ManageCompanies');
                     Alert.alert(
                         "Success",
                         responseJson.message,
@@ -98,7 +104,7 @@ export default class EditCompany extends Component {
                 this.setState({ spinnerVisible: false });
                 Alert.alert(
                     "Error",
-                    "An error occurred, please try later",
+                    "An error occurred, please ensure you are connected to the internet and try again",
                     [
                         { text: "Try Again", onPress: () => console.log('OK Pressed') }
                     ],
@@ -150,7 +156,7 @@ export default class EditCompany extends Component {
                 this.setState({ spinnerVisible: false });
                 Alert.alert(
                     "Error",
-                    "An error occurred, please try later",
+                    "An error occurred, please ensure you are connected to the internet and try again",
                     [
                         { text: "Try Again", onPress: () => console.log('OK Pressed') }
                     ],
@@ -177,29 +183,32 @@ export default class EditCompany extends Component {
                     </Body>
                     <Right />
                 </Header>
+                <Spinner visible={this.state.spinnerVisible}
+                         textStyle={{ color: '#8bb4c2', fontSize: 16, marginTop: -30 }}
+                         color={'#8bb4c2'}
+                         textContent={'Please wait...'} />
                 <Content padder>
                     <Form>
                         <Item floatingLabel style={{ margin: 15 }}>
                             <Label>Name</Label>
                             <Input
-                                placeholder="Name"
                                 autoCapitalize='none'
                                 value={this.state.name}
                                 onChangeText={(text) => this.setState({ name: text })}
                                 onSubmitEditing={(event) => {
-                                    this.refs.email.focus();
+                                    this._focusInput('email')
                                 }}/>
                         </Item>
                         <Item floatingLabel style={{ margin: 15 }} >
                             <Label>Email</Label>
                             <Input
-                                ref={'email'}
-                                placeholder="Email Address"
+                                getRef={(input) => this.email = input}
                                 value={this.state.email}
                                 autoCapitalize='none'
+                                keyboard-type={'email-address'}
                                 onChangeText={(text) => this.setState({ email: text })}
                                 onSubmitEditing={(event) => {
-                                    this.refs.website.focus();
+                                    this._focusInput('website')
                                 }} />
                         </Item>
                         {/*<Item floatingLabel style={{ margin: 15 }}>*/}
@@ -213,8 +222,7 @@ export default class EditCompany extends Component {
                         <Item floatingLabel style={{ margin: 15 }}>
                             <Label>Website</Label>
                             <Input
-                                ref={'website'}
-                                placeholder="Website"
+                                getRef={(input) => this.website = input}
                                 value={this.state.website}
                                 autoCapitalize='none'
                                 onChangeText={(text) => this.setState({ website: text })}

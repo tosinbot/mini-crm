@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Right, Title, Body } from 'native-base';
-export default class CardShowcaseExample extends Component {
+import Constants from '../config';
+
+export default class ViewCompany extends Component {
 
     constructor(props) {
         super(props);
@@ -30,7 +32,7 @@ export default class CardShowcaseExample extends Component {
                     <Card style={{flex: 0}}>
                         <CardItem>
                             <Left>
-                                <Thumbnail source={{uri: 'https://cregital-crmapi.botmotion.net/storage/'+this.props.navigation.getParam('logo', null)}} />
+                                <Thumbnail source={{uri: Constants.urls.storageRoot+this.props.navigation.getParam('logo', null)}} />
                                 <Body>
                                 <Text>{this.props.navigation.getParam('name', 'Company Name')}</Text>
                                 <Text note>{this.props.navigation.getParam('website', 'Company Website')}</Text>

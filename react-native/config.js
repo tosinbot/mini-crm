@@ -13,8 +13,8 @@ export default {
 
     // URLs
     urls: {
-        root: 'http://192.168.8.101:8000/',
-        storageRoot: 'http://192.168.8.101:8000/storage/'
+        root: 'http://192.168.8.102:8000/',
+        storageRoot: 'http://192.168.8.102:8000/storage/'
     },
 
 };
