@@ -1,4 +1,4 @@
-# MINI CRM - Cregital App Test
+# MINI CRM - Using Laravel 5 and React Native
 ## Quick Start
 
 ### Backend:
