@@ -16,16 +16,10 @@ import {
     Text } from "native-base";
 import Spinner from 'react-native-loading-spinner-overlay';
 import Constants from '../config';
-
 const launchscreenBg = require("../assets/launchscreen-bg.png");
 const launchscreenLogo = require("../assets/logo-kitchen-sink.png");
 
-
-
-
-
-
-export default class Login extends Component {
+export default class LoginScreen extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -36,6 +30,8 @@ export default class Login extends Component {
             password: '',
         }
     }
+
+    
 
     _onLogin = async() => {
         let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -208,9 +204,6 @@ export default class Login extends Component {
         this.setState({ authType: data });
     }
 
-
-
-
     render() {
         return (
             <Container style={styles.container}>
@@ -298,7 +291,7 @@ export default class Login extends Component {
 
                         }
                         <View style={{paddingRight: 20, paddingLeft: 20, flexDirection: 'row', justifyContent: 'flex-end'}}>
-                            <TouchableOpacity onPress={this.state.authType == 1 ? () =>this.changeForm('2') : () =>this.changeForm('1')}>
+                            <TouchableOpacity onPress={this.state.authType == 1 ? () =>this.changeForm('2') : () => this.changeForm('1')}>
                                 <Text style={{color: "#ffffff"}} >{this.state.authType == 1 ? 'New Account?' : 'Login'} </Text>
                             </TouchableOpacity>
                         </View>
@@ -308,6 +301,8 @@ export default class Login extends Component {
         );
     }
 }
+
+
 
 const deviceHeight = Dimensions.get("window").height;
 const styles = StyleSheet.create({
