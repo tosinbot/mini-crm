@@ -21,7 +21,9 @@ const launchscreenLogo = require("../assets/logo-kitchen-sink.png");
 
 export default class LoginScreen extends Component {
     constructor(props) {
+        
         super(props);
+        
         this.state = {
             authType: 1,
             spinnerVisible: false,
@@ -34,80 +36,81 @@ export default class LoginScreen extends Component {
     
 
     _onLogin = async() => {
-        let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(this.state.email < 2) {
-            Alert.alert(
-                "Alert",
-                "Please provide a valid email address",
-                [
-                    { text: "Ok", onPress: () => console.log('OK Pressed') }
-                ],
-                { cancelable: false }
-            )
-        }else if(!reg.test(this.state.email)) {
-            Alert.alert(
-                "Alert",
-                "Please provide a valid email address",
-                [
-                    { text: "Ok", onPress: () => console.log('OK Pressed') }
-                ],
-                { cancelable: false }
-            )
-        }else if(this.state.password < 2){
-            Alert.alert(
-                "Alert",
-                "Please provide a valid password",
-                [
-                    { text: "Ok", onPress: () => console.log('OK Pressed') }
-                ],
-                { cancelable: false }
-            )
-        }else{
+        this.props.navigation.navigate("Dashbord");
+        // let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        // if(this.state.email < 2) {
+        //     Alert.alert(
+        //         "Alert",
+        //         "Please provide a valid email address",
+        //         [
+        //             { text: "Ok", onPress: () => console.log('OK Pressed') }
+        //         ],
+        //         { cancelable: false }
+        //     )
+        // }else if(!reg.test(this.state.email)) {
+        //     Alert.alert(
+        //         "Alert",
+        //         "Please provide a valid email address",
+        //         [
+        //             { text: "Ok", onPress: () => console.log('OK Pressed') }
+        //         ],
+        //         { cancelable: false }
+        //     )
+        // }else if(this.state.password < 2){
+        //     Alert.alert(
+        //         "Alert",
+        //         "Please provide a valid password",
+        //         [
+        //             { text: "Ok", onPress: () => console.log('OK Pressed') }
+        //         ],
+        //         { cancelable: false }
+        //     )
+        // }else{
 
-            this.setState({ spinnerVisible: true });
-            try {
-                let response = await fetch(Constants.urls.root+'api/login', {
-                    method: 'POST',
-                    headers: {
-                        Accept: 'application/json',
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        email: this.state.email,
-                        password: this.state.password,
-                    }),
-                });
-                let responseJson = await response.json();
-                console.log("response:", responseJson);
-                if(responseJson.status === "success"){
-                    await AsyncStorage.setItem('api/user', JSON.stringify({token: responseJson.data.token}));
-                    this.setState({ spinnerVisible: false });
-                    this.props.navigation.navigate("Main");
-                }else{
-                    this.setState({ spinnerVisible: false });
-                    Alert.alert(
-                        "Error",
-                        responseJson.message,
-                        [
-                            { text: "Try Again", onPress: () => console.log('OK Pressed') }
-                        ],
-                        { cancelable: false }
-                    )
-                }
-            } catch (error) {
-                this.setState({ spinnerVisible: false });
-                Alert.alert(
-                    "Error",
-                    "An error occurred, please ensure you are connected to the internet and try again",
-                    [
-                        { text: "Try Again", onPress: () => console.log('OK Pressed') }
-                    ],
-                    { cancelable: false }
-                )
-                console.log("caught", error)
-            }
+        //     this.setState({ spinnerVisible: true });
+        //     try {
+        //         let response = await fetch(Constants.urls.root+'api/login', {
+        //             method: 'POST',
+        //             headers: {
+        //                 Accept: 'application/json',
+        //                 'Content-Type': 'application/json',
+        //             },
+        //             body: JSON.stringify({
+        //                 email: this.state.email,
+        //                 password: this.state.password,
+        //             }),
+        //         });
+        //         let responseJson = await response.json();
+        //         console.log("response:", responseJson);
+        //         if(responseJson.status === "success"){
+        //             await AsyncStorage.setItem('api/user', JSON.stringify({token: responseJson.data.token}));
+        //             this.setState({ spinnerVisible: false });
+        //             this.props.navigation.navigate("Main");
+        //         }else{
+        //             this.setState({ spinnerVisible: false });
+        //             Alert.alert(
+        //                 "Error",
+        //                 responseJson.message,
+        //                 [
+        //                     { text: "Try Again", onPress: () => console.log('OK Pressed') }
+        //                 ],
+        //                 { cancelable: false }
+        //             )
+        //         }
+        //     } catch (error) {
+        //         this.setState({ spinnerVisible: false });
+        //         Alert.alert(
+        //             "Error",
+        //             "An error occurred, please ensure you are connected to the internet and try again",
+        //             [
+        //                 { text: "Try Again", onPress: () => console.log('OK Pressed') }
+        //             ],
+        //             { cancelable: false }
+        //         )
+        //         console.log("caught", error)
+        //     }
 
-        }
+        // }
 
     }
 
@@ -206,7 +209,7 @@ export default class LoginScreen extends Component {
 
     render() {
         return (
-            <Container style={styles.container}>
+            <Container style={styles.container} style={{ backgroundColor: '#FFFFFF'}}>
                 <StatusBar barStyle="light-content" backgroundColor={"#37474F"} />
                 <Spinner visible={this.state.spinnerVisible}
                          textStyle={{ color: '#8bb4c2', fontSize: 16, marginTop: -30 }}
